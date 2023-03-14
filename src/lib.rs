@@ -73,7 +73,7 @@ impl GameState {
 
         GameState {
             snake,
-            length: 1,
+            length: 10,
             direction: Direction::Right,
             food: (0, 0),
             score: 0,
