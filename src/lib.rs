@@ -20,6 +20,7 @@ use pluggable_interrupt_os::vga_buffer::{
    -- Press R to restart when the game ends,
    -- Use the UP, DOWN, LEFT AND RIGHT keys to move the snake.
    --
+   __ That's the idea of the game - the normal snake game we know
 */
 
 // Constants
@@ -154,7 +155,7 @@ impl GameState {
                 '*',
                 col as usize,
                 row as usize,
-                ColorCode::new(Color::LightCyan, Color::Black),
+                ColorCode::new(COLOR_SNAKE, COLOR_BACKGROUND),
             );
             /*
             let start_idx = ((row as usize) * COLS + (col as usize)) * BLOCK_SIZE;
